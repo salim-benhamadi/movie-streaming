@@ -1,0 +1,33 @@
+/******************************** This page is done by Chayma Boukthir ********************************/
+form {
+  position: relative;
+  display: block;
+  left: 15%;
+  margin: 3px;
+}
+
+form input {
+  width: 30rem;
+  height: 3rem;
+  background-color: #2d3643;
+  border: none;
+  border-radius: 50px;
+  border-color: gray;
+  box-sizing: content-box;
+}
+
+form input::placeholder {
+  padding-left: 20px;
+}
+
+form label {
+  color: white;
+  font-size: 1rem;
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 1100px) {
+  form input {
+    width: 20rem;
+  }
+}

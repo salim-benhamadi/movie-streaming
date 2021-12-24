@@ -1,0 +1,244 @@
+/******************************** This page is done by salim ben hammadi ********************************/
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #020916;
+  overflow-x: hidden;
+}
+
+
+/* styling of the navigation bar */
+nav {
+  background: #151f2e;
+  padding: 10px 50px;
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+}
+nav a{
+   text-decoration : none;
+   color:white;
+   display: flex;
+   font-size: 14px;
+ }
+nav a>p {
+  padding-left: 20px;
+}
+
+nav img {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Styling of the search bar */
+.searchBar {
+  max-width: 600px;
+  min-width: 250px;
+  width: 20%;
+  margin: auto auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding-right: 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-input {
+  border: none;
+  height: 40px;
+  margin: auto;
+  padding: 0 0 0 40px;
+  background: transparent;
+  color: white;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-icon {
+  margin-right: 15px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  box-shadow: 0px 30px 100px red;
+  margin-top: 30px;
+  position: relative;
+}
+
+.mySlides {
+  width: 80%;
+  position: absolute;
+  transition-duration: 4s;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-top: 10%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 15%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 15%;
+}
+
+/* Caption text */
+.textBox {
+  color: #f2f2f2;
+  padding: 5% 10%;
+  position: absolute;
+  bottom: 0;
+  height: 70%;
+  overflow: hidden;
+  line-height: 10px;
+}
+
+.textBox p:first-child {
+  font-size: 1vw;
+  letter-spacing: 3px;
+}
+
+.textBox p:nth-of-type(2) {
+  font-size: 4vw;
+  font-weight: bolder;
+}
+
+.textBox p:nth-of-type(3) {
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.textBox p:nth-of-type(4) {
+  font-size: 1.5vw;
+  color: #ffffe9;
+}
+
+.textBox p:nth-of-type(5) {
+  font-size: 1.5vw;
+  color: #ffffe9;
+}
+
+.textBox p:nth-of-type(5)::before {
+  padding-right: 10px;
+  content: url("./assets/play.png");
+}
+
+.movie-container {
+  margin-top: 30%;
+  position: relative;
+}
+
+/* Title */
+.title {
+  color: white;
+  padding-left: 10%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.myMovies {
+  position: absolute;
+}
+
+.movie-container-two {
+  margin-top: 370px;
+  position: relative;
+}
+
+.myMovies-two {
+  position: absolute;
+}
+/* Animation of the movies */
+.myMovies,
+.myMovies-two {
+  animation-name: displaceContent;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes displaceContent {
+  0% {
+    transform: translateX(0em);
+  }
+
+  50% {
+    transform: translateX(-1000px);
+  }
+
+  0% {
+    transform: translateX(0em);
+  }
+}
+/*Styling for medium secren */
+@media only screen and (max-width: 1100px) {
+  nav a>p {
+    display: none;
+  }
+
+  .textBox p:nth-of-type(4) {
+    display: none;
+  }
+
+  .textBox p:nth-of-type(5) {
+    display: none;
+  }
+
+  .movie-container-two img {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav img:first-child {
+    margin: auto;
+  }
+
+  .slideshow-container {
+    display: none;
+  }
+
+  .movie-container-two img {
+    width: 50px;
+  }
+
+  .movie-container {
+    margin-top: 5%;
+    position: relative;
+  }
+
+  .searchBar {
+    display: none;
+  }
+}
+
+/* Styling for mobile secreen */
+@media only screen and (max-width: 450px) {
+  nav img:nth-of-type(2), .searchBar {
+    display: none;
+  }
+}

@@ -1,0 +1,318 @@
+/******************************** This page is done by Karim Omrane ********************************/
+
+html {
+	 height: 100%;
+	 width: 100%;
+}
+ body {
+	 font-family: 'Open Sans', serif;
+	 margin: 0;
+	 padding: 0;
+	 height: 100%;
+	 width: 100%;
+	 background-color: #020916;
+	 font-family: 'SF Pro Display', Arial;
+}
+
+/* styling of the navigation bar */
+nav {
+	background: #151f2e;
+	padding: 10px 50px;
+	display: flex;
+	position: sticky;
+	justify-content: space-between;
+  }
+  nav a{
+	 text-decoration : none;
+	 color:white;
+	 display: flex;
+	 font-size: 14px;
+   }
+  nav a>p {
+	padding-left: 20px;
+  }
+  
+  nav img {
+	margin-top: auto;
+	margin-bottom: auto;
+  }
+  
+  /* Styling of the search bar */
+  .searchBar {
+	max-width: 600px;
+	min-width: 250px;
+	width: 20%;
+	margin: auto auto;
+	background: rgba(255, 255, 255, 0.1);
+	padding-right: 20px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .search-input {
+	border: none;
+	height: 40px;
+	margin: auto;
+	padding: 0 0 0 40px;
+	background: transparent;
+	color: white;
+  }
+  
+  .search-input::placeholder {
+	color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .search-icon {
+	margin-right: 15px;
+  }
+
+ .first-movie {
+	 display: flex;
+}
+ .back-img {
+	 width: 100%;
+	 position: relative;
+	 top: 0;
+	 left: 0;
+	 opacity: 0.5;
+}
+ .poster-img {
+	 position: absolute;
+	 width: 20%;
+	 top: 60px;
+	 margin-top: 15px;
+	 left: 120px;
+	 transition: 0.3s;
+}
+ .poster-img:hover {
+	 box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 255);
+}
+ .movie-description {
+	margin-top: 15px;
+	 background-color: rgba(255, 255, 255, 0);
+	 text-align: left;
+	 color: rgba(238, 238, 238, 1);
+	 position: absolute;
+	 top: 70px;
+	 left: 35%;
+	 font-family: 'SF Pro Display', Arial;
+}
+ .movie-title {
+	 letter-spacing: 0.23px;
+	 font-size: 40px;
+	 font-weight: 700;
+}
+ .movie-summary {
+	 letter-spacing: 0.2px;
+	 font-size: 25px;
+	 font-weight: 500;
+}
+ .trailer {
+	 color: whitesmoke;
+	 font-size: 20px;
+}
+ .description {
+	 letter-spacing: 0.13px;
+	 font-size: 20px;
+	 font-weight: 300;
+	 width: 700px;
+}
+ .names {
+	 display: flex;
+}
+ .name {
+	 margin-right: 15%;
+}
+ .name p {
+	 letter-spacing: 0.05px;
+	 font-size: 16px;
+	 font-weight: 300;
+}
+/** * Tabs */
+ .tabs {
+	 display: flex;
+	 flex-wrap: wrap;
+	 padding-left: 100px;
+	 color: whitesmoke;
+}
+ .tabs label {
+	 order: 1;
+	 display: block;
+	 padding: 1rem 2rem;
+	 margin-right: 0.2rem;
+	 cursor: pointer;
+	 background: #020916;
+	 font-weight: bold;
+	 transition: background ease 0.2s;
+}
+ .tabs .tab {
+	 order: 99;
+	 flex-grow: 1;
+	 width: 100%;
+	 display: none;
+	 padding: 1rem;
+	 background: #020916;
+}
+ .tabs input[type="radio"] {
+	 display: none;
+}
+ .tabs input[type="radio"]:checked + label {
+	 background: #f6b302;
+}
+ .tabs input[type="radio"]:checked + label + .tab {
+	 display: block;
+}
+ .card {
+	/* Add shadows to create the "card" effect */
+	 width: 50%;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	 transition: 0.3s;
+}
+/* On mouse-over, add a deeper shadow */
+ .card:hover {
+	 box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 255);
+}
+/* Add some padding inside the card container */
+ .container {
+	 padding: 2px 16px;
+	 width: 85%;
+	 border-radius: 1%;
+	 background-color: #151f2e;
+}
+ .grid-container {
+	 display: inline-grid;
+	 grid-template-columns: auto auto auto;
+}
+ .container h3 {
+	 text-align: center;
+}
+ .container p {
+	 text-align: center;
+}
+ .actor-img {
+	 width: 100%;
+}
+ .row {
+	 display: table;
+	 width: 100%;
+	/*Optional*/
+	 table-layout: fixed;
+	/*Optional*/
+	 border-spacing: 10px;
+	/*Optional*/
+}
+ .column {
+	 display: table-cell;
+}
+ .checked {
+	 color: orange;
+}
+ .comment-img {
+	 width: 20%;
+	 display: inline;
+	 border-radius: 100%;
+	 transition: 0.3s;
+	 float: left;
+	 margin-right: 10px;
+}
+ .comment-img:hover {
+	 box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 255);
+}
+ .review h2 {
+	 display: inline;
+	 white-space: nowrap;
+}
+ iframe {
+	 transition: 0.3s;
+}
+ iframe:hover {
+	 box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 255);
+}
+ .interview h2 {
+	 width: 560px;
+}
+ @media (max-width: 45em) {
+	 .tabs .tab, .tabs label {
+		 order: initial;
+	}
+	 .tabs label {
+		 width: 100%;
+		 margin-right: 0;
+		 margin-top: 0.2rem;
+	}
+}
+ @media screen and (max-width: 1150px) {
+	 .movie-description {
+		 top: 10px;
+		 left: 40%;
+	}
+	 .movie-title {
+		 letter-spacing: 0.23px;
+		 font-size: 25px;
+		 font-weight: 700;
+	}
+	 .movie-summary {
+		 font-size: 20px;
+	}
+	 .trailer {
+		 font-size: 20px;
+	}
+	 .description {
+		 font-size: 15px;
+		 width: fit-content;
+	}
+	 .name p {
+		 font-size: 15px;
+	}
+}
+ @media screen and (max-width: 880px) {
+	 .movie-description {
+		 top: 20px;
+		 left: 45%;
+	}
+	 .movie-title {
+		 letter-spacing: 0.23px;
+		 font-size: 14px;
+	}
+	 .movie-summary {
+		 font-size: 15px;
+	}
+	 .trailer {
+		 font-size: 12px;
+	}
+	 .description {
+		 font-size: 12px;
+		 width: fit-content;
+	}
+	 .name p {
+		 font-size: 15px;
+	}
+}
+ @media screen and (max-width: 770px) {
+	 .back-img {
+		 height: 100%;
+	}
+	 .movie-description {
+		 top: 5px;
+		 left: 45%;
+	}
+	 .movie-title {
+		 letter-spacing: 0.23px;
+		 font-size: 14px;
+	}
+	 .movie-summary {
+		 font-size: 15px;
+	}
+	 .trailer {
+		 font-size: 10px;
+	}
+	 .description {
+		 font-size: 12px;
+		 width: fit-content;
+	}
+	 .name p {
+		 font-size: 8px;
+	}
+}
+ 

@@ -1,0 +1,209 @@
+<!-- ******************************** This page is done by Abdelhamid ben chedly ******************************** -->
+
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>TuniBest | Watch Movies Online Free on Tunibest</title>
+	<link rel="stylesheet" href="./style/homePage.css">
+	<link rel="stylesheet" href="./style/addMoviePage.css">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+
+	<script>
+		document.querySelector("input[type=number]")
+			.oninput = e => console.log(new Date(e.target.valueAsNumber, 0, 1))
+	</script>
+</head>
+
+<body>
+	<!--  The navigation bar -->
+	<nav>
+		<a href="homePage.html"><img height="30px" src="./assets/logo.png" alt="logo"></a>
+		<div class="searchBar">
+			<input class="search-input" type="text" placeholder="Search for a movie" name="" value="">
+			<img class="search-icon" width="15px" src="./assets/search-icon.png" alt="search icon">
+		</div>
+		<a href="userPage.html">
+			<img height="40px" src="./assets/avatar.png" alt="profile">
+			<p>Salim Ben Hammadi</p>
+		</a>
+	</nav>
+
+	<!-- the cover -->
+	<div class="cover">
+		<h1>Add a new movie</h1>
+		<div class="paragraph">
+			<p>imperdiet orci dapibus, commodo libero nec, interdum tortor. Morbi in nibh faucibus, iaculis lorem vitae, cursus velit. Etiam non blandit ex. Mauris in fringilla velit. Fusce eu dictum neque. Maecenas tristique sem neque, vel congue libero
+				efficitur at. Cras molestie ipsum at sem sollicitudin consectetur</p>
+		</div>
+	</div>
+
+
+	<div class="description">
+		<div class="overlay-two">
+			<h1>Description of the movie</h1>
+		</div>
+
+		<!-- Fist section contains : movie title, IMDB, Genre -->
+		<section class="information">
+
+			<div class="container">
+				<div class="title">Title*</div>
+				<div class="box">
+					<input type="text" class="textcontainer" name="fname" placeholder="-- Name of the Movie --">
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="title">IMDB ID
+					<a href="https://www.imdb.com/" target="_blank"> <img src="assets/Group 2018.png" class="help"> </a>
+				</div>
+				<div class="box">
+					<input type="text" class="textcontainer" name="fname" placeholder=" Exemple tt6146586">
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="title">Genre*</div>
+				<div class="box">
+					<select name="genre" class="textcontainer">
+						<option value="">Select</option>
+						<option value="Action">Action</option>
+						<option value="Comedy">Comedy</option>
+						<option value="Drama">Drama</option>
+						<option value="Fantasy">Fantasy</option>
+						<option value="Horror">Horror</option>
+						<option value="Mystery">Mystery</option>
+						<option value="Romance">Romance</option>
+						<option value="Thriller">Thriller</option>
+						<option value="Western">Western</option>
+						<option value="Dark">Dark</option>
+					</select>
+				</div>
+			</div>
+
+		</section>
+
+		<br>
+		<br>
+
+
+		<!-- Second section contains: description of the movie -->
+		<div class="title">Short Description of the Movie</div>
+		<div class="information">
+			<textarea class="textareaBox" placeholder="Write a short description about the movie you want to add" name="review">
+			</textarea>
+			<div class="suggestions">
+				<a href="https://agoodmovietowatch.com/mood/" target="_blank"><img class="help" src="assets/i.png"></a>
+				Suggestions
+				<p>Quisque suscipit ipsum est, eu venenatis leo ornare eget rkrwt porta facilisis elementum. Sed condimentum sed massa quis ullamcorper. Donec at scelerisque neque. Pellentesque sagittis, massa sodales sodales finibus, felis ligula tempus
+					lorem
+					porttitor ex lacus vel felis. Vivamus egestas scelerisque consecteturwew. Vestibulum faucibus enim urna, fermentum aliquet quam euismod non proin cursus.</p>
+			</div>
+		</div>
+
+		<!-- third section conatins classification, year of production, Distributor -->
+		<section class="information">
+			<div class="container">
+				<div class="title">Classification</div>
+				<div class="box">
+					<select name="classification" id="classification-select" class="textcontainer">
+						<option value="">Select</option>
+						<option value="General" class="text-select">General</option>
+						<option value="PGR" class="text-select">Parental Guidance Recommended</option>
+						<option value="RMA" class="text-select">Recommended for Mature Audience</option>
+						<option value="-12" class="text-select">Restricted to 12 and over</option>
+						<option value="-15" class="text-select">Restricted to 15 and over </option>
+						<option value="-18" class="text-select">Restricted to 18 and over</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="title">Year Of Production</div>
+				<div class="box">
+					<input type="number" class="textcontainer" placeholder="YYYY" min="1940" max="2021">
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="title">Distributor</div>
+				<div class="box">
+					<input type="text" class="textcontainer" placeholder="Ex : Universal">
+				</div>
+
+			</div>
+
+		</section>
+
+		<br>
+		<br>
+
+		<!-- forth section contains : Duration , budget, box office -->
+		<div class="information">
+			<div class="container">
+				<div class="title">Duration</div>
+				<div class="box">
+					<input type="number" class="textcontainer" placeholder="in minutes" min="40" max="300">
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="title">Budget</div>
+				<div class="box">
+					<input type="number" class="textcontainer" placeholder="Ex : $55 000 000" min="10000">
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="title">Box Office</div>
+				<div class="box">
+					<input type="number" class="textcontainer" placeholder="Ex : $100 000 000" min="100.000">
+				</div>
+			</div>
+		</div>
+
+		<!-- Fifth section: where user can upload the cover of the movie -->
+		<div class="overlay-two" style="margin-top:150px;">
+			<h1>Photos and Videos</h1>
+		</div>
+		<div class="formBox">
+			<form class="uploadmovie" action="upload.php">
+				<input type="file" multiple>
+				<img src="assets/Group 2016.png" class="drag">
+			</form>
+			<form class="addmovie" action="upload.php" method="POST">
+				<img src="assets/Group 2051.png">
+				<input type="file" multiple>
+			</form>
+			<form class="addmovie" action="upload.php" method="POST">
+				<img src="assets/Group 2051.png">
+				<input type="file" multiple>
+			</form>
+			<form class="addmovie" action="upload.php" method="POST">
+				<img src="assets/Group 2051.png">
+				<input type="file" multiple>
+			</form>
+		</div>
+
+
+		<!-- footer : terms and conditions -->
+		<footer class="information terms">
+			<div class="container" style="width:75%;">
+
+				<h2>Terms and Conditions</h2>
+				<p>Aceitar e SalvarAenean sed a est. Sed quis neque ut nibh suscipit imperdiet ac non augue. Aenean ornare sit amet lectus non tristique. Nunc ut volutpat lectus. Nulla velit augue, pulvinar sed nisi sit amet, eleifend fermentum est. Quisque
+					nibh justo, congue ut erat at, aliquet efficitur purus. Integer venenatis odio vitae orci efficitur mollis. Donec ultrices diam dictum dignissim vestibulum. Proin eleifend nunc nunc. Sed non arcu eget lorem viverra sodales.
+				</p>
+
+			</div>
+			<div class="container">
+				<img src="assets/btn_signup.png" width="200px;">
+			</div>
+
+		</footer>
+</body>
+
+</html>

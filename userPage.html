@@ -1,0 +1,106 @@
+<!-- ******************************** This page is done by Chayma Boukthir ******************************** -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style/userPage.css">
+  <link rel="stylesheet" href="./style/homePage.css">
+  <title>TuniBest | Watch Movies Online Free on Tunibest</title>
+</head>
+
+<body>
+
+  <!--  The navigation bar -->
+  <nav>
+
+    <a href="homePage.html"><img height="30px" src="./assets/logo.png" alt="logo"></a>
+    <div class="searchBar">
+      <input class="search-input" type="text" placeholder="Search for a movie" name="" value="">
+      <img class="search-icon" width="15px" src="./assets/search-icon.png" alt="search icon">
+    </div>
+    <a href="userPage.html">
+      <img height="40px" src="./assets/avatar.png" alt="profile">
+      <p>Salim Ben Hammadi</p>
+    </a>
+  </nav>
+
+
+  <!-- the main body -->
+  <section id="MainBody">
+    <div class="subtitle">Watch List</div>
+    <br>
+
+    <!-- List of options for the user, he can sort and filter the movies -->
+    <div class="List">
+      <select name="sort" id="sort">
+        <option value="default">Sort</option>
+        <option value="latest">Latest</option>
+        <option value="trending">trending</option>
+        <option value="ranking">Ranking</option>
+      </select>
+      <select name="filter" id="filter">
+        <option value="filter">Filter</option>
+        <option value="comedy">Comedy</option>
+        <option value="Action">Action</option>
+        <option value="romance">Romance</option>
+        <option value="horror">Horror</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="sciencefiction">Science Fiction</option>
+      </select>
+      <br>
+      <br>
+      <section class="watchList">
+
+        <!--  the side bar navigation : where user can navigate to watch list page or edit profile page -->
+        <aside class="loginlist">
+          <ul>
+            <li><a href="userPage.html">Watch List</a></li>
+            <li><a href="editPage.html">Edit Profile</a></li>
+            <li><a href="addMoviePage.html">Add a Movie</a></li>
+          </ul>
+        </aside>
+
+        <!-- List of the movies -->
+        <div id="images" class="images">
+          <div>
+            <img src="./assets/business family.jpg" width="200px" height="300px">
+            <br>
+            <snap><sub>&nbsp;Business Family</sub></snap>
+            <br>
+            <snap class="currently" style="font-size: x-small;">&nbsp;SS3 &nbsp;&nbsp;Ep6</snap>
+          </div>
+
+          <div>
+            <img src="./assets/call-my-agent_poster_goldposter_com_1.jpg" width="200px" height="300px">
+            <br>
+            <snap><sub>&nbsp;Call My Agent</sub></snap>
+            <br>
+            <snap class="currently" style="font-size: x-small;">&nbsp;SS1 &nbsp;&nbsp;Ep22</snap>
+          </div>
+
+          <div>
+            <img src="./assets/on the verge.jpg" width="200px" height="300px">
+            <br>
+            <snap><sub>&nbsp;On The Verge</sub></snap>
+            <br>
+            <snap class="currently" style="font-size: x-small;">&nbsp;SS6&nbsp;&nbsp; Ep4</snap>
+          </div>
+
+          <div>
+            <img src="./assets/The_hook_up_plan.jpg" width="200px" height="300px">
+            <br>
+            <snap><sub>&nbsp;The Hook Up Plan</sub></snap>
+            <br>
+            <snap class="currently" style="font-size: x-small;">&nbsp;SS2 &nbsp;&nbsp;Ep14</snap>
+          </div>
+
+        </div>
+      </section>
+
+  </section>
+
+
+</body>
+
+</html>

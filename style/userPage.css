@@ -1,0 +1,105 @@
+/******************************** This page is done by Chayma Boukthir ********************************/
+
+
+.loginlist {
+  display: flex;
+}
+
+.loginlist a:hover {
+  color: white;
+}
+
+.MainBody .subtitle {
+  color: white;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  font-size: 1.75em;
+}
+
+#sort {
+  border-radius: 5px;
+  margin-left: 50px;
+  background-color: rgba(0, 0, 0, 0.795);
+  border-color: rgba(0, 0, 0, 0.521);
+  color: rgba(255, 255, 255, 0.788);
+  width: 5.8rem;
+  height: 1.7rem;
+  font-size: 6;
+}
+
+#filter {
+  border-radius: 5px;
+  margin-left: 50px;
+  background-color: rgba(66, 214, 199, 0.925);
+  border-color: rgba(45, 180, 167, 0.863);
+  color: rgba(255, 255, 255, 0.788);
+  width: 5.8rem;
+  height: 1.7rem;
+  font-size: 6;
+}
+
+.watchList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#images {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  left: 2.5%;
+}
+
+.images img {
+  margin: .3rem;
+  padding: 0.1rem;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.images div {
+  display: inline;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.currently {
+  font-weight: 0;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.loginlist li {
+  display: -webkit-box;
+  box-sizing: content-box;
+  position: relative;
+  width: 9.5rem;
+  color: black;
+  background-color: rgba(88, 235, 220, 0.952);
+  margin: 1rem;
+  padding: 1rem;
+  border-color: rgba(47, 223, 205, 0.938);
+  border-radius: 8px;
+  text-align: center;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.loginlist a {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+
+@media only screen and (max-width: 700px) {
+  .watchList {
+    display: block;
+  }
+
+  .loginlist ul {
+    display: flex;
+  }
+
+  .loginlist li {
+    width: 90px;
+  }
+}
