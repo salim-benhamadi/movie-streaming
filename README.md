@@ -10,7 +10,7 @@ Tunibest is a front-end of a free streaming service that allows Tunisians to wat
 
 **Client:** HTML5, CSS3, JavaScript
 
-**Tools:** Atom editior, VScode
+**Tools:** Atom editor, VScode
 
 
 
