@@ -41,7 +41,7 @@ Presentation of the project
 
 ## Team
 
-the team who contrubuted to this project :
+the team who contributed to this project :
 * Salim Ben Hammadi
 * Karim Omrane
 * Chayma Boukthir
