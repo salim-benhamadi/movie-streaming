@@ -30,7 +30,7 @@ Presentation of the project
 
 
 ## Features
-👩‍💻 The website is fully responsive
+👩‍💻 Fully responsive
 
 🧠 SEO friendly 
 
